@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+        }
+        table th:nth-child(odd) {
+            background-color: yellow;
+        }
+        table th:nth-child(even) {
+            background-color: yellowgreen;
+        }
+        table tr:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+        table tr:nth-child(even) {
+            background-color: gainsboro;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <table border="1" cellspacing="10px" cellpadding="5px" align="center">
+        <tr>
+            <th>col1</th>
+            <th>Salary</th>
+            <th>col3</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td> <i class="fa fa-rupee"></i> 10,000 </td>
+            <td>13</td>
+            <td> <i class="fa fa-edit"></i> </td>
+            <td> <i class="fa fa-trash"></i> </td>
+        </tr>
+        </tr>
+            <td colspan="2">21</td>
+            <td rowspan="2"> <img src="salary.jpg" width = "50px" alt = "ERROR" /> </td>
+            <td> <i class="fa fa-edit"></i> </td>
+            <td> <i class="fa fa-trash"></i> </td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td> <i class="fa fa-edit"></i> </td>
+            <td> <i class="fa fa-trash"></i> </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
