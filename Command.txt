@@ -16,3 +16,7 @@ git branch -M main
 git push -u origin main
 
 
+
+To show only changes in the file that have not yet been committed
+
+git status 
