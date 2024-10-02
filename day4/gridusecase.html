@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Grid Usecase</title>
+   <style>
+    body{
+
+    }
+    .parent{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    .header{
+        background-color: lightcoral;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+
+    .leftmenu{
+        background-color: lightblue;
+        grid-column: 1/2;
+    }
+
+    .main{
+        background-color: brown;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+
+    .rightmenu{
+        background-color: lightblue;
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    .footer{
+        background-color: lightslategray;
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+
+
+   </style>
+</head>
+<body>
+    <!-- parent -->
+    <div class="parent">
+        <!-- Grid Item1 -->
+         <div class="header">
+            <h1>KL University</h1>
+
+         </div>
+
+         <!-- Grid Item 2 -->
+        <div class="leftmenu"> LeftMenu</div>
+
+        <!-- Grid Item 3 -->
+
+        <div class="main">Main</div>
+
+        <!-- Grid Item 4 -->
+         <div class="rightmenu">RightMenu</div>
+
+         <!-- Grid Item 5 -->
+          <div class="footer">Footer</div>
+    </div>\
+
+</body>
+</html>
