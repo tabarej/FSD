@@ -1,0 +1,26 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.parent{
+    display: flex;
+    height: 100vw;
+    border: 1px solid;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.parent__title{
+    width: 100%;
+    border: 1px solid red;
+}
+.parent__line{
+
+}
+.parent__text__para{
+
+}
+.common{
+
+}

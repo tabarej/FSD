@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS basics</title>
+</head>
+<body>
+    <script>
+        // const 
+        // ES6
+        // const x = 100;
+        // x = 200; // Uncaught TypeError:  
+        
+        // let arr1 = [10, 20, 30, 40, 50];
+        // document.write(arr1.at(0), arr1.at(-5), "<br>")
+        
+    
+        // const arr1 = [10, 20, 30, 40, 50];
+        // arr1 = []
+        // arr1 = [100, 200, 300, 400, 500];
+    
+        // arr1 = 100;
+        // arr1 = 200;
+        // arr1 = 300;
+        // arr1 = 400;
+        // console.table(arr1);
+
+
+
+        let obj1 = {
+            frontend    : "React",
+            backend     : "Node",
+            database    : "MongoDB"
+        };
+        
+        // sol-1    (dot)
+        let x =obj1.frontend;
+        document.write(x);
+
+        // sol-2    (square)
+        let a = obj1["backend"];
+        document.write(a);
+
+        // sol-3 (desctructuring) (ES6)
+
+        let {frontend, backend, database} = obj1;
+        document.write(frontend, backend, database);
+
+        // sol-4 for .....in loop
+        for(let key in obj1){
+            document.write(obj1[key])
+        }
+
+
+
+
+    </script>
+</body>
+</html>

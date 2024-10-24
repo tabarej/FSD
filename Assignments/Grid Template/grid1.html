@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid view 1</title>
+    <style>
+        .parent{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 10% 10% 80%;
+            grid-template-columns: 35% 35% 30%;
+            /* border: 1px solid rebeccapurple; */
+            border-radius: 5px;
+        }
+        .header{
+            background-color: rgb(34, 51, 51);
+            color: wheat;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            grid-row: 1/1;
+            grid-column: 1/4;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .search{
+            background-color: rgb(202, 214, 71);
+            color: rgb(230, 221, 221);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            grid-row: 2/3;
+            grid-column: 1/3;
+            margin-bottom: 5px;
+            border-radius: 5px;
+
+        }
+        .leftsidebar{
+            color: white;
+            background-color: blueviolet;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            grid-row: 3/4;
+            grid-column: 1/2;
+            margin-right: 5px;
+            border-radius: 5px;
+
+        }
+        .middlecolumn{
+            color: white;
+            background-color: rgb(61, 162, 212);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            grid-row: 3/4;
+            grid-column: 2/3;
+            border-radius: 5px;
+
+        }
+        .rightsidebar{
+            color: white;
+            background-color: rgb(219, 107, 22);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            grid-row: 2/4;
+            grid-column: 3/4;
+            margin-left: 5px;
+            border-radius: 5px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+           <h1>Header</h1>
+        </div>
+
+        <div class="search">
+            <h1>Search</h1>
+        </div>
+        
+        <div class="leftsidebar">
+            <h1>Left Sidebar</h1>
+        </div>
+
+        <div class="middlecolumn">
+            <h1>Middle Column</h1>
+        </div>
+
+        <div class="rightsidebar">
+            <h1>Right Sidebar</h1>
+        </div>
+    </div>
+
+</body>
+</html>

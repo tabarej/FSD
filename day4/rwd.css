@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 20;
+}
+
+.container {
+  height: 100%;
+}
+.container__header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__header__logo {
+  margin-left: 10;
+}
+.container__header__logo__menu {
+  margin-right: 10px;
+  display: flex;
+  gap: 2rem;
+}
+.container__main {
+  height: 80vh;
+  background-color: rgb(192, 192, 182);
+}
+.container__footer {
+  height: 10vh;
+  background-color: green;
+}/*# sourceMappingURL=rwd.css.map */

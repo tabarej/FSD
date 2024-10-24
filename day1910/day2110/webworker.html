@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let addition = new worker("addition.js");
+        addition.postMessage({"num":200,"num":100})\
+        addition.onmessage = function{
+            console.log(event.data)
+        }
+    </script>
+</body>
+</html>

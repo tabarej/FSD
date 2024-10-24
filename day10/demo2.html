@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj1 = {
+            frontend    : "React",
+            backend     : "Node",
+            database    : "MongoDB"
+        };
+        
+        // obj1 = {}    //Uncaught TypeError: Assignment to constant variable.
+      
+        obj1.frontend = "ReachJS";
+        obj1.stack = "MERN Stack";
+
+
+        let {frontend, backend, database, stack} = obj1;
+        document.write(frontend, backend, database, stack);
+
+
+    </script>
+</body>
+</html>

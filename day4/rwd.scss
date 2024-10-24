@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 20;
+}
+.container{
+    height: 100%;
+
+    &__header{
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+                margin-left: 10;    
+            &__brand{
+
+            }
+        &__menu{
+            margin-right: 10px;
+            display: flex;
+            gap: 2rem;
+        }    
+        }
+    }
+
+    &__main{
+        height: 80vh;
+        background-color: rgb(192, 192, 182);
+    }
+
+    &__footer{
+        height: 10vh;
+        background-color: green;
+
+    }
+
+}
+
+@media{max-width:$mobile;
+    .container{
+        &__header{
+            &__logo{
+                &__brand{
+
+                }
+
+            }
+        &__menu{
+            display: node;
+        }    
+        }
+    }
+}
